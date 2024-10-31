@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.section {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+.section h2 {
+    text-align: center;
+}
+
+.category {
+    padding: 10px;
+    background-color: #FF921C;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.category:hover {
+    background-color: #ECA427;
+}
+
+.item-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.item-card img {
+    width: 100px;
+    height: 100px;
+}
+
+#billList {
+    list-style: none;
+    padding: 0;
+}
+
+#billList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#billTotal {
+    margin-top: 20px;
+    font-weight: bold;
+}

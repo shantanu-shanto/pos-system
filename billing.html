@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: Categories -->
+        <div class="section categories">
+            <h2>Categories</h2>
+            <div id="categoryList">
+                <!-- Categories will be dynamically loaded here -->
+            </div>
+        </div>
+
+        <!-- Section 2: Items -->
+        <div class="section items">
+            <h2>Items</h2>
+            <div id="itemList">
+                <!-- Items will be dynamically loaded here -->
+            </div>
+        </div>
+
+        <!-- Section 3: Bill -->
+        <div class="section bill">
+            <h2>Bill</h2>
+            <ul id="billList">
+                <!-- Bill items will be added here -->
+            </ul>
+            <div id="billTotal">
+                Total: $0.00
+            </div>
+            <button id="checkoutButton" style="margin-top: 20px; background-color: #FF921C; color: white; padding: 10px; border: none; width: 100%; cursor: pointer;">
+                Checkout
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

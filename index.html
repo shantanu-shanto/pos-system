@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Stock</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f9f9f9;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        input, select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #FF921C;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ECA427;
+        }
+    </style>
+</head>
+<body>
+    <h2>Insert New Stock</h2>
+    <form id="stockForm" enctype="multipart/form-data">
+        <label for="category">Category</label>
+        <input type="text" id="category" name="category" required>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="price">Price</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+
+        <label for="image">Upload Image</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
